@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./index.js" defer></script>
- 
- 
     <title>Fruit App</title>
 </head>
 <body>
@@ -21,20 +18,35 @@
                 <!-- Fruit items will be dynamically added here -->
             </ul>
         </section>
-        <section id="add-fruit-section">
-            <h2>Check Fruits Availability</h2>
-            <form id="fruit-form">
-                <label for="fruit-select">Fruit:</label>
+        <section id="check-fruit-section">
+            <h2>Fruit Available!</h2>
+            <form id="check-fruit-form">
+                <label for="fruit-select">Select Fruit:</label>
                 <select id="fruit-select" name="fruit-select" required>
                     <!-- Options will be populated here -->
                 </select>
+
                 <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
                 <p id="form-message" class="hidden"></p>
             </form>
-          <div>
-              <a href="https://media.istockphoto.com/id/995518546/photo/assortment-of-colorful-ripe-tropical-fruits-top-view.jpg?s=612x612&w=is&k=20&c=_5n0Qf_osohv32NYsdlKVks2XohdlALQCAiXA3qjkDA="> <img src="https://media.istockphoto.com/id/995518546/photo/assortment-of-colorful-ripe-tropical-fruits-top-view.jpg?s=612x612&w=0&k=20&c=bz2zksjSPikOYm9I-mG-f8SAQWVpFsR4M_u4K9soLQ0="></a>
-          </div>
         </section>
+        <section>
+            <section id = "add-fruit-section">
+                <h2>New Fruit</h2>
+                <form id="add-fruit-form">
+                    <label for="new-fruit">Fruit Name:</label>
+                    <input type="text" id="new-fruit"name="new-fruit"required>
+<button type="submit">Add Fruit</button>
+<p id="add-fruit-message" class ="hidden">
+                </form>
+            </section>
+    
+        <div>
+            <a href="https://media.istockphoto.com/id/995518546/photo/assortment-of-colorful-ripe-tropical-fruits-top-view.jpg?s=612x612&w=is&k=20&c=_5n0Qf_osohv32NYsdlKVks2XohdlALQCAiXA3qjkDA=">
+                <img src="https://media.istockphoto.com/id/995518546/photo/assortment-of-colorful-ripe-tropical-fruits-top-view.jpg?s=612x612&w=0&k=20&c=bz2zksjSPikOYm9I-mG-f8SAQWVpFsR4M_u4K9soLQ0=" alt="Tropical Fruits">
+            </a>
+        </div>
     </main>
 </body>
 </html>
